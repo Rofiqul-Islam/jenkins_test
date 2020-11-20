@@ -10,12 +10,6 @@ pipeline {
             }
         }
 
-        stage ('Authentication Stage') {
-            steps {
-                input("Do you want to proceed?")
-            }
-        }
-
         stage ('Testing Stage') {
             steps {
                 withMaven(maven: 'maven') {
