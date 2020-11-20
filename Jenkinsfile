@@ -17,12 +17,4 @@ pipeline {
                 }
             }
         }
-
-        stage ('Email') {
-            steps {
-                emailext body: 'Now', subject: 'Test', to: 'shourav95.ri@gmail.com'
-            }
-        }
-
-
-    }
+}
